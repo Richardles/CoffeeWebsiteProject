@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffein Line</title>
+    <link rel="stylesheet" href="../css/payment-page.css">
+    <script src="../jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-capsule">
+                <div class="header-title">
+                    <a href="home.html"><img src="../asset/cafein line logo.png" alt="cafein line logo" class="header-logo"></a>
+                    <a href="home.html"><p>Caffein Line</p></a>
+                </div>
+                <div class="header-separator">
+                </div>
+                <div class="header-navigation">
+                    <a href="home.html" class="header-navigation-home">
+                        Home
+                    </a>
+                    <div class="header-navigation-menus">
+                        <a href="" class="menu-nav">Menus</a>
+                        <div class="menus-dropdown">
+                            <a href="beverage-page.html">Beverages</a>
+                            <a href="dessert-page.html">Desserts</a>
+                        </div>
+                    </div>
+                    <a href="contact-page.html" class="header-navigation-contact">
+                        Contact Us
+                    </a>
+                    <a href="payment-page.html" class="header-navigation-payment">
+                        Payment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="br-separator"></div>
+
+    <div class="contact-content">
+        <div class="form-section">
+            <div class="form">
+                <form action="" onsubmit="return validateIdentity()" name="contact-form">
+                    <div class="title">
+                        PAYMENT
+                    </div>
+                    <div class="name-field">
+                        <input type="text" placeholder="Name" name="name-field" id="name-field" class="input-field">
+                    </div>
+                    <div class="email-field">
+                        <input type="email" name="" id="email" placeholder="Email" class="input-field">
+                    </div>
+                    <div class="city-field">
+                        <input type="text" id="city" placeholder="City" class="input-field">
+                    </div>
+                    <div class="address-field">
+                        <textarea name="" id="address" cols="45" rows="3" placeholder="Address" class="input-field"></textarea>
+                    </div>
+                    <div class="payment-method">
+                        <div class="method-text">Payment Method</div>
+                        <div class="payment-section">
+                            <select name="" id="payment-method" onchange="getPaymentType()">
+                                <option value="1">Visa</option>
+                                <option value="2">Paypal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="visa-detail">
+                        <div class="visa-number">
+                            <input type="text" class="input-field" id="card-number" placeholder="Card Number">
+                        </div>
+                        <div class="validity-cvv">
+                            <div class="validity">
+                                <div class="month-text">Validity</div>
+                                <input type="month" name="" id="card-validity" class="month-field">
+                            </div>
+                            <div class="cvv">
+                                <input type="text" name="" id="card-cvv" class="cvv-field" placeholder="CVV">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" name="" id="agree-box" value="agree">
+                        <div>Agree with Caffein Line Terms and Conditions.</div>
+                    </div>
+                    <input type="submit" value="Pay" class="send-button">
+                </form>
+                <div class="delivery-fee">
+                    Delivery fee is free regardless of any minimum transaction.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="br-separator"></div>
+    
+    <div class="footer">
+        <div class="caffein-number">802000</div>
+        <div class="social-media">
+            <a href="http://facebook.com" target="_blank"><img src="../asset/facebook.png" alt=""></a>
+            <a href="http://instagram.com" target="_blank"><img src="../asset/instagram.png" alt=""></a>
+            <a href="http://youtube.com" target="_blank"><img src="../asset/youtube.png" alt=""></a>
+        </div>
+        <div class="copyright">&#169 2021 by Richardles.</div>
+    </div>
+</body>
+<script src="../js/jquery.js"></script>
+</html>

@@ -1,0 +1,336 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*======================== header section =================================== */
+
+.header{
+    width: 100%;
+    height: 200px;
+    background-color: #26070C;
+    display: flex;
+    align-items: center;
+}
+
+.br-separator{
+    border-top: 1px solid #b36537;
+}
+
+.header-logo{
+    width: 50px;
+    margin: 0px 20px 0px 0px;
+    transition: 0.5s;
+}
+
+.header-title{
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-title a{
+    text-decoration: none;
+}
+
+.header-capsule{
+    width: 100%;
+    margin: 0px 80px;
+}
+
+.header-title p{
+    transition: 0.5s;
+}
+
+.header-title:hover p{
+    cursor: pointer;
+    color: #F2E2CE;
+    margin-left: 5px;
+}
+
+.header-logo:hover{
+    color: #F2E2CE;
+    filter: brightness(1.1);
+    transform: scale(1.1);
+}
+
+.header-separator{
+    border-top: 1px solid #ffffff;
+    margin: 20px 0px 10px 0px;
+}
+
+.header-navigation{
+    display: flex;
+}
+
+.header-navigation a{
+    margin-right: 60px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.header-navigation a:hover{
+    cursor: pointer;
+    color: #F2E2CE;
+}
+
+.header-navigation-menus{
+    position: relative;
+    display: inline-block;
+}
+
+.header-navigation-menus:hover .menus-dropdown{
+    transition: 0.2s;
+    display: block;
+}
+
+.menus-dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    max-width: 100px;
+}
+
+/*======================== form section =================================== */
+.contact-content{
+    background-color: #b36537;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.form-section{
+    display: flex;
+    background-color: #F2E2CE;
+    box-shadow: 2px 2px 8px #26070C;
+    border-radius: 2px;
+}
+
+.form *{
+    color: black;
+}
+
+.form{
+    padding: 20px;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form .title{
+    padding: 0px 20px;
+    font-weight: bold;
+}
+
+.input-field{
+    padding: 7px 10px;
+    margin: 3px 20px;
+    width: 345px;
+    resize: none;
+    outline: none;
+    transition: 0.5s;
+    border: none;
+    background: none;
+    border-bottom: 2px solid black;
+}
+
+::placeholder{
+    color: rgb(62, 62, 62);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.send-button{
+    padding: 10px 40px;
+    margin: 10px 0px 10px 0px;
+    font-weight: bold;
+    color: #F2E2CE;
+    border-radius: 20px;
+    background-color: #26070C;
+    transition: 0.2s;
+}
+
+.send-button:hover{
+    box-shadow: 2px 2px 3px black;
+    filter: brightness(1.5);
+    cursor: pointer;
+}
+
+.send-button:active{
+    box-shadow: 0px 0px 3px black;
+    color: #b36537;
+}
+
+.input-field:focus, .cvv-field:focus, .month-field:focus, #payment-method:focus{
+    background: #f1cc9e;
+    border-color: rgb(122, 122, 255);
+}
+
+.delivery-fee{
+    font-size: 11px;
+    text-align: center;
+    padding: 7px 0px;
+    font-weight: bold;
+}
+
+.payment-method{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.method-text{
+    padding: 0px 20px;
+}
+
+.payment-section{
+    width: 100%;
+}
+
+#payment-method{
+    width: 90%;
+    padding: 10px 10px;
+    margin: 10px 20px;
+    outline: none;
+    transition: 0.5s;
+    border: none;
+    background: none;
+    border-bottom: 2px solid black;
+}
+
+.validity-cvv{
+    display: flex;
+    align-items: flex-end;
+}
+
+.validity{
+    padding: 5px 10px 0px 20px;
+}
+
+.month-field{
+    max-width: 150px;
+    padding: 7px 10px;
+    margin: 3px 0px;
+    resize: none;
+    outline: none;
+    transition: 0.5s;
+    border: none;
+    background: none;
+    border-bottom: 2px solid black;
+}
+
+.cvv{
+    width: 100%;
+}
+
+.cvv-field{
+    padding: 7px 10px;
+    margin: 3px 10px;
+    max-width: 100%;
+    resize: none;
+    outline: none;
+    transition: 0.5s;
+    border: none;
+    background: none;
+    border-bottom: 2px solid black;
+}
+
+.terms{
+    max-width: 100%;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 10px 0px;
+}
+
+#agree-box{
+    margin: 0px 10px 0px 0px;
+}
+
+/*======================== footer section =================================== */
+
+.footer{
+    height: 200px;
+    background-color: #26070C;
+}
+
+.social-media img{
+    width: 30px;
+    height: 30px;
+}
+
+.caffein-number{
+    display: flex;
+    justify-content: center;
+    padding: 35px 0px;
+    font-size: 13px;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.social-media img{
+    margin: 0px 8px;
+    transition: 0.8s;
+}
+
+.social-media img:hover{
+    filter: brightness(1.1);
+    transform: rotate(360deg);
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.br-separator{
+    border-top: 1px solid #f3b590;
+}
+
+/*============================= media screen ==================== */
+
+@media screen and (max-width: 800px) {
+    .header-navigation{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .header-navigation a:hover{
+        cursor: pointer;
+        color: #F2E2CE;
+        margin-left: 6px;
+        text-shadow: 2px 2px 5px black;
+    }
+    
+    .header-navigation-menus{
+        position: relative;
+        display: inline-block;
+    }
+
+    .menu-nav{
+        display: none;
+    }
+    
+    .menus-dropdown{
+        display: block;
+        position: relative;
+        max-width: 100px;
+    }
+}
